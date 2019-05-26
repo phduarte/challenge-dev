@@ -1,7 +1,7 @@
 # Visão Geral
 Api para gerenciamento de cadastro de motoristas.
 
-[![BCH compliance](https://bettercodehub.com/edge/badge/phduarte/challenge-dev?branch=master)](https://bettercodehub.com/)
+[![Build status](https://ci.appveyor.com/api/projects/status/gcu4ps8oflyfbf6f?svg=true)](https://ci.appveyor.com/project/phduarte/challenge-dev) [![BCH compliance](https://bettercodehub.com/edge/badge/phduarte/challenge-dev?branch=master)](https://bettercodehub.com/)
 
 Essa aplicação foi desenvolvida com propósito exclusivo de estudo. Ela utiliza .NET CORE 2.1, .NET Standard e .NET Framework 4.7 e os dados são armazenados em memória. Ou seja, são voláteis e não irão persistir após o aplicativo ser parado ou reiniciado no servidor.
 
