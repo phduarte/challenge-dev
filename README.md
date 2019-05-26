@@ -1,6 +1,8 @@
 # Visão Geral
 Api para gerenciamento de cadastro de motoristas.
 
+[![BCH compliance](https://bettercodehub.com/edge/badge/phduarte/challenge-dev?branch=master)](https://bettercodehub.com/)
+
 Essa aplicação foi desenvolvida com propósito exclusivo de estudo. Ela utiliza .NET CORE 2.1, .NET Standard e .NET Framework 4.7 e os dados são armazenados em memória. Ou seja, são voláteis e não irão persistir após o aplicativo ser parado ou reiniciado no servidor.
 
 A arquitetura tem como base o estilo proposto pelo Domain-Driven Design tendo bastante foco no DomainModel, Entidade, Objeto de Valor e Linguagem Ubíqua.
