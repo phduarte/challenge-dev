@@ -2,8 +2,8 @@ configuration: Release
 
 # restore NuGet packages before running MSBuild
 before build:
- - nuget restore
- 
+ nuget restore
+
 build:
- verbosity: minimal
- publish_wap: true
+  project: src/ChallengeDev.sln
+  verbosity: minimal
