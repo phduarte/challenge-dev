@@ -3,6 +3,6 @@ image: Visual Studio 2017
 configuration: Release
 platform: Any CPU
 before_build:
-- ps: nuget restore
+- ps: nuget restore src\ChallengeDev.sln -DisableParallelProcessing -Verbosity quiet
 build:
   verbosity: minimal
