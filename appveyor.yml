@@ -5,5 +5,4 @@ platform: Any CPU
 before_build:
 - ps: nuget restore
 build:
-  project: src/ChallengeDev.sln
   verbosity: minimal
