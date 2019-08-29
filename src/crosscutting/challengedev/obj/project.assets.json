@@ -176,24 +176,27 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\paul_\\.nuget\\packages\\": {},
+    "C:\\Users\\phdua\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\paul_\\Documents\\Visual Studio 2017\\Projects\\challenge-dev\\src\\crosscutting\\challengedev\\WappaMobile.ChallengeDev.csproj",
+      "projectUniqueName": "C:\\Users\\phdua\\Source\\Repos\\phduarte\\challenge-dev\\src\\crosscutting\\challengedev\\WappaMobile.ChallengeDev.csproj",
       "projectName": "WappaMobile.ChallengeDev",
-      "projectPath": "C:\\Users\\paul_\\Documents\\Visual Studio 2017\\Projects\\challenge-dev\\src\\crosscutting\\challengedev\\WappaMobile.ChallengeDev.csproj",
-      "packagesPath": "C:\\Users\\paul_\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\paul_\\Documents\\Visual Studio 2017\\Projects\\challenge-dev\\src\\crosscutting\\challengedev\\obj\\",
+      "projectPath": "C:\\Users\\phdua\\Source\\Repos\\phduarte\\challenge-dev\\src\\crosscutting\\challengedev\\WappaMobile.ChallengeDev.csproj",
+      "packagesPath": "C:\\Users\\phdua\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\phdua\\Source\\Repos\\phduarte\\challenge-dev\\src\\crosscutting\\challengedev\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\paul_\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\phdua\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"

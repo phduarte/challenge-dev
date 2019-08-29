@@ -2,7 +2,7 @@
 
 namespace WappaMobile.ChallengeDev
 {
-    public static class Assertion
+    public static class Check
     {
         public static bool IsNumeric(object value)
         {
