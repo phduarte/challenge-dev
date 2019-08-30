@@ -4,36 +4,18 @@ namespace WappaMobile.ChallengeDev
 {
     public static class Check
     {
-        public static bool IsNumeric(object value)
-        {
-            return value.ToString().All(x => "0123456789".Contains(x));
-        }
+        /// <summary>
+        /// Make sure all characters are numeric
+        /// </summary>
+        /// <param name="value">String to test</param>
+        /// <returns>true if all characters are numeric</returns>
+        public static bool IsNumeric(object value) => value.ToString().All(x => "0123456789".Contains(x));
 
-        public static bool IsAllNumbers(object values)
-        {
-            foreach(var i in values.ToString().ToCharArray())
-            {
-                if(!IsNumeric(i))
-                    return false;
-            }
-
-            return true;
-        }
-
-        public static bool IsLetter(object value)
-        {
-            return value.ToString().ToLower().All(x => "abcdefghijklmnopqrstuvwxyz ".Contains(x));
-        }
-
-        public static bool IsAllLetters(object values)
-        {
-            foreach(var i in values.ToString().ToCharArray())
-            {
-                if(!IsLetter(i))
-                    return false;
-            }
-
-            return true;
-        }
+        /// <summary>
+        /// Make sure all characters are letter
+        /// </summary>
+        /// <param name="values"></param>
+        /// <returns></returns>
+        public static bool IsLetter(object values) => values.ToString().ToLower().ToCharArray().All(x => "abcdefghijklmnopqrstuvwxyz ".Contains(x));
     }
 }

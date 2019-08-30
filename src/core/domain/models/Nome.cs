@@ -10,10 +10,10 @@ namespace WappaMobile.ChallengeDev.Models
 
         public Nome(string primeiro, string ultimo)
         {
-            if(string.IsNullOrEmpty(primeiro) || !Check.IsAllLetters(primeiro))
+            if(string.IsNullOrEmpty(primeiro) || !Check.IsLetter(primeiro))
                 throw new ArgumentException(nameof(primeiro));
 
-            if(string.IsNullOrEmpty(ultimo) || !Check.IsAllLetters(ultimo))
+            if(string.IsNullOrEmpty(ultimo) || !Check.IsLetter(ultimo))
                 throw new ArgumentException(nameof(ultimo));
 
             Primeiro = primeiro;
@@ -22,7 +22,7 @@ namespace WappaMobile.ChallengeDev.Models
 
         public Nome(string nomecompleto)
         {
-            if(string.IsNullOrEmpty(nomecompleto) || !Check.IsAllLetters(nomecompleto))
+            if(string.IsNullOrEmpty(nomecompleto) || !Check.IsLetter(nomecompleto))
                 throw new ArgumentException(nameof(nomecompleto));
 
             var nomes = nomecompleto.Split(' ');
