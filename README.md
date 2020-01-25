@@ -16,10 +16,11 @@ I tried to write a code simple, readable and elegant. Using code metrics keeping
 ## Hands on
 
 1. Opens the solution using Visual Studio 2017+
-3. On Visual Studio, clique em Build / Clean Solution.
-4. Set WappaMobile.ChallengeDev.WebApi as Startup (right click on the project then Set as Startup Project)
-5. Inside the WappaMobile.ChallengeDev.GoogleMaps project, set the constant API_KEY in Settings class for the Api key provided by Google.
-6. Run the Solution (F5).
+2. On Visual Studio, clique em Build / Clean Solution.
+3. Set WappaMobile.ChallengeDev.WebApi as Startup (right click on the project then Set as Startup Project)
+4. Inside the WappaMobile.ChallengeDev.GoogleMaps project, set the constant API_KEY in Settings class for the Api key provided by Google.
+5. Run the Solution (F5).
+6. Use the swagger documentation to try the app (access /swagger/index.html).
 
 ## End Points
 

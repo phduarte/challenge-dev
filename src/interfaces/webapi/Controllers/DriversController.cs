@@ -42,7 +42,7 @@ namespace WappaMobile.ChallengeDev.Client.webApi.Controllers
             try
             {
                 var driver = Database.Drivers.Get(id);
-                return Ok();
+                return Ok(driver);
             }
             catch (Exception ex)
             {
