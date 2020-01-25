@@ -56,7 +56,7 @@ Update existing driver informations through its ID.
 Body (application/json)
 ```json
 {
-	"name": ""
+	"name": "",
 	"car":
 	{
 		"brand":"",
