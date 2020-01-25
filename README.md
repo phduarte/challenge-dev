@@ -30,11 +30,7 @@ Adds drivers in database.
 Body (application/json)
 ```json
 {
-	"name":
-	{
-		"firstname": "",
-		"lastname": ""
-	},
+	"name": "",
 	"car":
 	{
 		"brand":"",
@@ -60,11 +56,7 @@ Update existing driver informations through its ID.
 Body (application/json)
 ```json
 {
-	"name":
-	{
-		"firstname": "",
-		"lastname": ""
-	},
+	"name": ""
 	"car":
 	{
 		"brand":"",
