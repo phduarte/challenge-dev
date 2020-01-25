@@ -1,14 +1,18 @@
 ﻿using System;
 using System.Linq;
+using System.Runtime.Serialization;
 
 namespace WappaMobile.ChallengeDev.Models
 {
     /// <summary>
     /// This struct is a design pattern's implementation of Primite Obsession
     /// </summary>
+    [DataContract]
     public struct Name
     {
+        [DataMember]
         public string FirstName, LastName;
+        [DataMember]
         public string FullName => $"{FirstName} {LastName}";
 
         public bool IsValid => !FullName.IsEmpty();

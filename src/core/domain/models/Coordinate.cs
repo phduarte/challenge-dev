@@ -1,7 +1,11 @@
-﻿namespace WappaMobile.ChallengeDev.Models
+﻿using System.Runtime.Serialization;
+
+namespace WappaMobile.ChallengeDev.Models
 {
+    [DataContract]
     public struct Coordinate
     {
+        [DataMember]
         public double Latitude, Longitude;
 
         public bool IsEmpty => Latitude == 0 && Longitude == 0;

@@ -1,13 +1,19 @@
 ﻿using System.Linq;
+using System.Runtime.Serialization;
 
 namespace WappaMobile.ChallengeDev.Models
 {
+    [DataContract]
     public struct Plate
     {
         string _letters;
 
+        [DataMember] 
         public string Letters { get { return _letters; } set { _letters = value.ToUpper(); } }
+        [DataMember] 
         public string Numbers { get; set; }
+        [DataMember]
+        public string NumberPlate => $"{Letters}-{Numbers}";
 
         public Plate(string placa)
         {
@@ -31,7 +37,7 @@ namespace WappaMobile.ChallengeDev.Models
 
         public override string ToString()
         {
-            return $"{Letters}-{Numbers}";
+            return NumberPlate;
         }
 
         public static implicit operator Plate(string plate)
