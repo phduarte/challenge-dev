@@ -8,28 +8,33 @@ namespace WappaMobile.ChallengeDev.GoogleMaps
 {
     public class GeoCodeServices
     {
-        public async Task<Coordenadas> BuscarAsync(Endereco endereco)
+        public async Task<Coordinate> SearchAsync(Address address)
         {
-            using(var client = new HttpClient())
+            if (address == null || !address.IsValid)
+                throw new ArgumentNullException(nameof(address));
+
+            using (var client = new HttpClient())
             {
                 client.BaseAddress = new Uri(Settings.URL_BASE);
-                var resultado = await client.GetAsync($@"json?address={endereco}&key={Settings.API_KEY}");
+                var result = await client.GetAsync($@"json?address={address}&key={Settings.API_KEY}");
 
-                if(resultado.IsSuccessStatusCode)
+                if (result.IsSuccessStatusCode)
                 {
-                    try
-                    {
-                        var e = JsonConvert.DeserializeObject<GeoCode>(await resultado.Content.ReadAsStringAsync());
-                        return new Coordenadas(e.lat, e.lng);
-                    }
-                    catch(Exception ex)
-                    {
+                    var e = JsonConvert.DeserializeObject<GeoCode>(await result.Content.ReadAsStringAsync());
 
+                    if (e.status.Equals("REQUEST_DENIED"))
+                        throw new GoogleMapsRequestDeniedExcepion("Check the API_KEY.");
+                    else
+                    {
+                        var c = new Coordinate(e.lat, e.lng);
+
+                        if (!c.IsEmpty) 
+                            return c;
                     }
                 }
             }
 
-            return new Coordenadas();
+            throw new AddressNotFoundException(address);
         }
     }
 }
