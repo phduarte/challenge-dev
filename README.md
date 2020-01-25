@@ -1,116 +1,107 @@
-# Visão Geral
-Api para gerenciamento de cadastro de motoristas.
+# Using Google GeoCoding Api
+
+## Overview
+Api for drivers and cars management.
 
 [![Build status](https://ci.appveyor.com/api/projects/status/gcu4ps8oflyfbf6f?svg=true)](https://ci.appveyor.com/project/phduarte/challenge-dev) [![BCH compliance](https://bettercodehub.com/edge/badge/phduarte/challenge-dev?branch=master)](https://bettercodehub.com/)
 
-Essa aplicação foi desenvolvida com propósito exclusivo de estudo. Ela utiliza .NET CORE 2.1, .NET Standard e .NET Framework 4.7 e os dados são armazenados em memória. Ou seja, são voláteis e não irão persistir após o aplicativo ser parado ou reiniciado no servidor.
+This application is a study case purpose only. It uses .Net Core 2.1, .Net Standard and .Net Framework 4.7. The database is stored in memory, in other words, it is volatile. The information will not be saved when the server restarts.
 
-A arquitetura tem como base o estilo proposto pelo Domain-Driven Design tendo bastante foco no DomainModel, Entidade, Objeto de Valor e Linguagem Ubíqua.
+The architecture uses the guidance of Domain-Driven Design principles focused on DomainModel, Entity, Value Objects and Ubiquitous Language.
 
-Diversos design patterns foram utilizados em vários trechos dos códigos, no entanto sem exageros. É fácil perceber princípios SOLID principalmente no DomainModel e Infrastructure.
+Many others design patterns was used throught the piece of codes, but without overengeneering. I tried to make it explict the using of SOLID principle, very often in DomainModel and Infrastructure layers. But is not hard to see a lot of implicit uses int the solution.
 
-Todo o codigo em sí, preza pela simplicidade e legibilidade e se orienta por métricas de baixo acoplamento e complexidade ciclomática.
+I tried to write a code simple, readable and elegant. Using code metrics keeping it low coupling and low cyclomatic complexity.
 
-# Get Start
+## Hands on
 
-1. Clone o código para seu computador.
-2. Abra a Solution usando Visual Studio 2017+
-3. No menu do Visual Studio, clique em Build / Clean Solution.
-4. Defina o projeto WappaMobile.ChallengeDev.WebApi como Startup (clique sobre o projeto com o botão direito em seguida escolha Set as Startup Project)
-5. No projeto WappaMobile.ChallengeDev.GoogleMaps, altere o valor da constant API_KEY da classe Settings informando a sua Chave de Api fornecida pelo Google.
-6. Execute a Solution apertando F5.
+1. Opens the solution using Visual Studio 2017+
+3. On Visual Studio, clique em Build / Clean Solution.
+4. Set WappaMobile.ChallengeDev.WebApi as Startup (right click on the project then Set as Startup Project)
+5. Inside the WappaMobile.ChallengeDev.GoogleMaps project, set the constant API_KEY in Settings class for the Api key provided by Google.
+6. Run the Solution (F5).
 
-# End Points
+## End Points
 
-### POST /api/motoristas
-Inclusão de motoristas no banco de dados.
+### POST /api/drivers
+Adds drivers in database.
 
 Body (application/json)
-```javascript
+```json
 {
-	nome:
+	"name":
 	{
-		primeiro:"",
-		ultimo:""
+		"firstname": "",
+		"lastname": ""
 	},
-	carro:
+	"car":
 	{
-		marca:"",
-		modelo:"",
-		placa:
-		{
-			letras:"AAA",
-			numeros:"0000"
-		}
+		"brand":"",
+		"model":"",
+		"plate": ""
 	},
-	endereco:
+	"address":
 	{
-		tipo:"Rua",
-		logradouro:"",
-		numero:"",
-		bairro:"",
-		cidade:"",
-		estado:"",
-		uf:"",
-		cep:""
+		"suffix": "R",
+		"street": "",
+		"number": "",
+		"district": "",
+		"city": "",
+		"state": "",
+		"zipcode": ""
 	}
 }
 ```
 
-### PUT /api/motoristas/{id}
-Atualização dos dados de um motorista existente através do seu ID.
+### PUT /api/drivers/{id}
+Update existing driver informations through its ID.
 
 Body (application/json)
-```javascripty
+```json
 {
-	nome:
+	"name":
 	{
-		primeiro:"",
-		ultimo:""
+		"firstname": "",
+		"lastname": ""
 	},
-	carro:
+	"car":
 	{
-		marca:"",
-		modelo:"",
-		placa:
-		{
-			letras:"AAA",
-			numeros:"0000"
-		}
+		"brand":"",
+		"model":"",
+		"plate": ""
 	},
-	endereco:
+	"address":
 	{
-		tipo:"Rua",
-		logradouro:"",
-		numero:"",
-		bairro:"",
-		cidade:"",
-		estado:"",
-		uf:"",
-		cep:"
+		"suffix": "R",
+		"street": "",
+		"number": "",
+		"district": "",
+		"city": "",
+		"state": "",
+		"zipcode": ""
 	}
 }
 ```
 
-### GET /api/motoristas
-Listagem de todos os motoristas cadastrados.
+### GET /api/drivers
+Lists all drivers stored in database.
 
-### GET /api/motoristas?orderby={campo}
-Listagem de todos os motoristas de forma ordenada.
+### GET /api/drivers?orderby={campo}
+Lists all drivers sorted ascending.
 
 <table>
 <tr>
-<th>Parametro</th>
-<th>Descrição</th>
-<th>Valores esperados</th>
+<th>Parameter</th>
+<th>Description</th>
+<th>Expected values</th>
 </tr>
 
 <tr>
 <td>orderby</td>
-<td>Define qual o campo será utilizado como referência para a ordenação.</td>
-<td>nome / sobrenome</td>
+<td>Set the criteria for sort.</td>
+<td>firstname / lastname</td>
 </tr>
 </table>
 
-### DELETE /api/motoristas/{id}
-Exclusão de um motorista através de seu ID.
+### DELETE /api/drivers/{id}
+Removes a driver from database through its ID.

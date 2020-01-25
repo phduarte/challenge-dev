@@ -2,19 +2,19 @@
 
 namespace WappaMobile.ChallengeDev.Models
 {
-    public class Entidade
+    public class Entity
     {
         public Guid Id { get; set; }
 
-        public Entidade()
+        public Entity()
         {
             Id = Guid.NewGuid();
         }
 
         public override bool Equals(object obj)
         {
-            if(obj is Entidade entidade)
-                return entidade.Id.Equals(Id);
+            if(obj is Entity e)
+                return e.Id.Equals(Id);
 
             return false;
         }

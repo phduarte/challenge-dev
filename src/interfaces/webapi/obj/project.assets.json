@@ -11773,11 +11773,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\phdua\\Source\\Repos\\phduarte\\challenge-dev\\src\\interfaces\\webapi\\WappaMobile.ChallengeDev.WebApi.csproj",
+      "projectUniqueName": "C:\\Users\\phdua\\Source\\Repos\\challenge-dev\\src\\interfaces\\webapi\\WappaMobile.ChallengeDev.WebApi.csproj",
       "projectName": "webApi",
-      "projectPath": "C:\\Users\\phdua\\Source\\Repos\\phduarte\\challenge-dev\\src\\interfaces\\webapi\\WappaMobile.ChallengeDev.WebApi.csproj",
+      "projectPath": "C:\\Users\\phdua\\Source\\Repos\\challenge-dev\\src\\interfaces\\webapi\\WappaMobile.ChallengeDev.WebApi.csproj",
       "packagesPath": "C:\\Users\\phdua\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\phdua\\Source\\Repos\\phduarte\\challenge-dev\\src\\interfaces\\webapi\\obj\\",
+      "outputPath": "C:\\Users\\phdua\\Source\\Repos\\challenge-dev\\src\\interfaces\\webapi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -11798,17 +11798,17 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\phdua\\Source\\Repos\\phduarte\\challenge-dev\\src\\core\\domain\\models\\WappaMobile.ChallengeDev.Models.csproj": {
-              "projectPath": "C:\\Users\\phdua\\Source\\Repos\\phduarte\\challenge-dev\\src\\core\\domain\\models\\WappaMobile.ChallengeDev.Models.csproj"
+            "C:\\Users\\phdua\\Source\\Repos\\challenge-dev\\src\\core\\domain\\models\\WappaMobile.ChallengeDev.Models.csproj": {
+              "projectPath": "C:\\Users\\phdua\\Source\\Repos\\challenge-dev\\src\\core\\domain\\models\\WappaMobile.ChallengeDev.Models.csproj"
             },
-            "C:\\Users\\phdua\\Source\\Repos\\phduarte\\challenge-dev\\src\\core\\infrastructure\\persistence\\inmemory\\WappaMobile.ChallengeDev.InMemory.csproj": {
-              "projectPath": "C:\\Users\\phdua\\Source\\Repos\\phduarte\\challenge-dev\\src\\core\\infrastructure\\persistence\\inmemory\\WappaMobile.ChallengeDev.InMemory.csproj"
+            "C:\\Users\\phdua\\Source\\Repos\\challenge-dev\\src\\core\\infrastructure\\persistence\\inmemory\\WappaMobile.ChallengeDev.InMemory.csproj": {
+              "projectPath": "C:\\Users\\phdua\\Source\\Repos\\challenge-dev\\src\\core\\infrastructure\\persistence\\inmemory\\WappaMobile.ChallengeDev.InMemory.csproj"
             },
-            "C:\\Users\\phdua\\Source\\Repos\\phduarte\\challenge-dev\\src\\core\\infrastructure\\services\\googlemaps\\WappaMobile.ChallengeDev.GoogleMaps.csproj": {
-              "projectPath": "C:\\Users\\phdua\\Source\\Repos\\phduarte\\challenge-dev\\src\\core\\infrastructure\\services\\googlemaps\\WappaMobile.ChallengeDev.GoogleMaps.csproj"
+            "C:\\Users\\phdua\\Source\\Repos\\challenge-dev\\src\\core\\infrastructure\\services\\googlemaps\\WappaMobile.ChallengeDev.GoogleMaps.csproj": {
+              "projectPath": "C:\\Users\\phdua\\Source\\Repos\\challenge-dev\\src\\core\\infrastructure\\services\\googlemaps\\WappaMobile.ChallengeDev.GoogleMaps.csproj"
             },
-            "C:\\Users\\phdua\\Source\\Repos\\phduarte\\challenge-dev\\src\\crosscutting\\challengedev\\WappaMobile.ChallengeDev.csproj": {
-              "projectPath": "C:\\Users\\phdua\\Source\\Repos\\phduarte\\challenge-dev\\src\\crosscutting\\challengedev\\WappaMobile.ChallengeDev.csproj"
+            "C:\\Users\\phdua\\Source\\Repos\\challenge-dev\\src\\crosscutting\\challengedev\\WappaMobile.ChallengeDev.csproj": {
+              "projectPath": "C:\\Users\\phdua\\Source\\Repos\\challenge-dev\\src\\crosscutting\\challengedev\\WappaMobile.ChallengeDev.csproj"
             }
           }
         }
@@ -11829,16 +11829,23 @@
             "autoReferenced": true
           },
           "Microsoft.NETCore.App": {
+            "suppressParent": "All",
             "target": "Package",
             "version": "[2.1.0, )",
             "autoReferenced": true
           }
         },
         "imports": [
-          "net461"
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
         ],
         "assetTargetFallback": true,
-        "warn": true
+        "warn": true,
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

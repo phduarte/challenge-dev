@@ -5,43 +5,35 @@ using WappaMobile.ChallengeDev.Models;
 
 namespace WappaMobile.ChallengeDev.Persistence
 {
-    abstract class Repository<T> where T : Entidade
+    internal abstract class Repository<T> where T : Entity
     {
         protected readonly List<T> _cache = new List<T>();
 
-        public T PegarPeloId(Guid id)
+        public T Get(Guid id)
         {
             return _cache.FirstOrDefault(x => x.Id.Equals(id));
         }
 
-        public void Excluir(Guid id)
+        public void Remove(Guid id)
         {
-            var x = PegarPeloId(id);
+            var x = Get(id);
             _cache.Remove(x);
         }
 
-        public IEnumerable<T> Listar()
+        public IEnumerable<T> GetAll()
         {
             return _cache;
         }
 
-        public void Salvar(T entidade)
-        {
-            if(_cache.Contains(entidade))
-                Atualizar(entidade);
-            else
-                Incluir(entidade);
-        }
-
-        public void Incluir(T entidade)
+        public void Add(T entidade)
         {
             _cache.Add(entidade);
         }
 
-        public void Atualizar(T entidade)
+        public void Save(T entidade)
         {
-            Excluir(entidade.Id);
-            Incluir(entidade);
+            Remove(entidade.Id);
+            Add(entidade);
         }
     }
 }

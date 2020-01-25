@@ -4,7 +4,7 @@ namespace WappaMobile.ChallengeDev.Persistence
 {
     public static class Database
     {
-        public static IMotoristas Motoristas = new Motoristas();
-        public static ICarros Carros = new Carros();
+        public static IDrivers Drivers = new Drivers();
+        public static ICars Cars = new Cars();
     }
 }

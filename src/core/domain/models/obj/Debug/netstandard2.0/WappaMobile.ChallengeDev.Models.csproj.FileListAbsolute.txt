@@ -10,3 +10,14 @@ C:\Users\paul_\Documents\Visual Studio 2017\Projects\WappaMobile.ChallengeDev\sr
 C:\Users\paul_\Documents\Visual Studio 2017\Projects\WappaMobile.ChallengeDev\src\WappaMobile.ChallengeDev\WappaMobile.ChallengeDev.Models\obj\Debug\netstandard2.0\WappaMobile.ChallengeDev.Models.csproj.CopyComplete
 C:\Users\paul_\Documents\Visual Studio 2017\Projects\WappaMobile.ChallengeDev\src\WappaMobile.ChallengeDev\WappaMobile.ChallengeDev.Models\obj\Debug\netstandard2.0\WappaMobile.ChallengeDev.Models.dll
 C:\Users\paul_\Documents\Visual Studio 2017\Projects\WappaMobile.ChallengeDev\src\WappaMobile.ChallengeDev\WappaMobile.ChallengeDev.Models\obj\Debug\netstandard2.0\WappaMobile.ChallengeDev.Models.pdb
+C:\Users\phdua\Source\Repos\challenge-dev\src\core\domain\models\bin\Debug\netstandard2.0\WappaMobile.ChallengeDev.Models.deps.json
+C:\Users\phdua\Source\Repos\challenge-dev\src\core\domain\models\bin\Debug\netstandard2.0\WappaMobile.ChallengeDev.Models.dll
+C:\Users\phdua\Source\Repos\challenge-dev\src\core\domain\models\bin\Debug\netstandard2.0\WappaMobile.ChallengeDev.Models.pdb
+C:\Users\phdua\Source\Repos\challenge-dev\src\core\domain\models\bin\Debug\netstandard2.0\WappaMobile.ChallengeDev.dll
+C:\Users\phdua\Source\Repos\challenge-dev\src\core\domain\models\bin\Debug\netstandard2.0\WappaMobile.ChallengeDev.pdb
+C:\Users\phdua\Source\Repos\challenge-dev\src\core\domain\models\obj\Debug\netstandard2.0\WappaMobile.ChallengeDev.Models.csprojAssemblyReference.cache
+C:\Users\phdua\Source\Repos\challenge-dev\src\core\domain\models\obj\Debug\netstandard2.0\WappaMobile.ChallengeDev.Models.AssemblyInfoInputs.cache
+C:\Users\phdua\Source\Repos\challenge-dev\src\core\domain\models\obj\Debug\netstandard2.0\WappaMobile.ChallengeDev.Models.AssemblyInfo.cs
+C:\Users\phdua\Source\Repos\challenge-dev\src\core\domain\models\obj\Debug\netstandard2.0\WappaMobile.ChallengeDev.Models.csproj.CopyComplete
+C:\Users\phdua\Source\Repos\challenge-dev\src\core\domain\models\obj\Debug\netstandard2.0\WappaMobile.ChallengeDev.Models.dll
+C:\Users\phdua\Source\Repos\challenge-dev\src\core\domain\models\obj\Debug\netstandard2.0\WappaMobile.ChallengeDev.Models.pdb
