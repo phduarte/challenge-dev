@@ -74,5 +74,10 @@ namespace WappaMobile.ChallengeDev.Models
         {
             return name.FullName;
         }
+
+        public static implicit operator Name(string name)
+        {
+            return new Name(name);
+        }
     }
 }
