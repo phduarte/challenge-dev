@@ -3,7 +3,9 @@
 ## Overview
 Api for drivers and cars management.
 
-[![Build status](https://ci.appveyor.com/api/projects/status/gcu4ps8oflyfbf6f?svg=true)](https://ci.appveyor.com/project/phduarte/challenge-dev) [![BCH compliance](https://bettercodehub.com/edge/badge/phduarte/challenge-dev?branch=master)](https://bettercodehub.com/)
+[![Build status](https://ci.appveyor.com/api/projects/status/gcu4ps8oflyfbf6f?svg=true)](https://ci.appveyor.com/project/phduarte/challenge-dev) 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/db7d172f6a8142df86650781f70eaa67)](https://www.codacy.com/manual/phduarte87/challenge-dev?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=phduarte/challenge-dev&amp;utm_campaign=Badge_Grade)
+[![BCH compliance](https://bettercodehub.com/edge/badge/phduarte/challenge-dev?branch=master)](https://bettercodehub.com/)
 
 This application is a study case purpose only. It uses .Net Core 2.1, .Net Standard and .Net Framework 4.7. The database is stored in memory, in other words, it is volatile. The information will not be saved when the server restarts.
 
